@@ -29,6 +29,10 @@ module.exports = {
           "sass-loader", // Turns SCSS into CSS
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
