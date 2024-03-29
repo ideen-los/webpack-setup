@@ -1,3 +1,3 @@
-import "./style.scss";
+import './style.scss';
 
-console.log("Everything seems to be working fine.");
+console.log('Everything seems to be working fine.'); // comment

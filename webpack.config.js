@@ -22,6 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
+        // Rule for SCSS files
         test: /\.scss$/,
         use: [
           "style-loader", // Injects CSS into the DOM
@@ -30,6 +31,15 @@ module.exports = {
         ],
       },
       {
+        // Rule for CSS files
+        test: /\.css$/,
+        use: [
+          "style-loader", // Injects CSS into the DOM
+          "css-loader", // Turns CSS into commonjs
+        ],
+      },
+      {
+        // Rule for image files
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
